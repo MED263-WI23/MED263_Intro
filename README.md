@@ -6,7 +6,7 @@ This elective course will cover the latest advances in bioinformatics in the con
 
 ## Course Information
 * Number: MED263, Bioinformatics Applications to Human Disease
-* Quarter: Winter 2022
+* Quarter: Winter 2023
 * Units: 4
 * Directors: Dr. Matteo D'Antonio (madantonio@health.ucsd.edu)
 * TAs: Caitlin Guccione (cguccion@ucsd.edu) and Brian Johnson (bdj001@ucsd.edu)
