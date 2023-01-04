@@ -1,6 +1,17 @@
-# Tutorial: Conda, Jupyter, Python & R
+# Tutorial: Python, Conda, and Jupyter Notebooks
 
-## Background on Conda and Jupyter
+## Background on Python, Conda and Jupyter
+
+<img width="276" alt="image" src="https://cdn.thenewstack.io/media/2021/11/ab06a958-pythonlogo.png">
+
+### Python
+#### What is Python
+- Python is a high-level, general-purpose programming language. It is used across various disciplines and a common choice in bioinformatics. 
+#### Why use Python?
+- It is a relatively  fast programming language without complex syntax 
+- It is extremely well documented and there are a lot of online resources if you run into isssues
+- There are lots of built in and easily installable packages which allow you to do things such as manipulate csv files, creating plots and even perform machine learning
+
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/25289269/148433697-8022274b-3bac-4947-a2b6-89b03854b70f.png">
 
 ### Conda
@@ -22,9 +33,9 @@
 - Great for testing code with immediate feedback
 - User friendly and reliable 
 
-## Conda
+## Python & Conda
 
-### Install Conda
+### Install Conda, which also installs Python 🤩 
 In order to save time, we will be installing Miniconda (the mini version) instead of Anaconda (the full version).
 
 1. Download Miniconda
@@ -66,6 +77,12 @@ conda activate med263_jupyter
 ```
 - To check your conda environment is working, you should see *(med263_jupyter)* on the left part of your terminal now
 
+### Confirm that Python was Installed
+```bash
+python --version
+```
+- This command should report your current version of python and will likely say *Python 3.11.1*
+
 ## Install and Run Jupyter Labs
 Now, that we have conda installed we can simply install jupyter labs. 
 Before starting this step, make sure you are in the *(med263_jupyter)*  conda environment. If you are not, follow the instructions in the **Activate Conda Environment** step above to do so. 
@@ -80,10 +97,6 @@ conda install -c conda-forge jupyterlab
 jupyter lab
 ```
 - If this step isn't working, make sure you are in the *(med263_jupyter)* conda environment
-
-### Install R
-- Go to (https://cloud.r-project.org) and install R and RStudio
-   - Choose and download the correct operating system 
 
 ### Install R on Jupyter Labs  
 1. Start by opening a terminal, then run the following
@@ -152,67 +165,12 @@ Should print the following:
 > 5
 ```
 
-## Intro to R
-
-### Basic Commands
-1. Printing
-```R
-x <- 'Hello World'
-print(x)
-```
-Should print the following
-```R
-'Hello World'
-```
-
-2. Comments
- ```R
-#This is a single line comment
-```
-3. Basic For Loops  
-In python, the tabs / spacing are necessary for the code to run properly
- ```R
-sample_list <- c(1, 2, 3, 4)
-for (x in sample_list){
-    print(x)
-}
-```
-Should print the following:
- ```r
-> 1
-> 2
-> 3
-> 4
-```
-
-4. Basic While Loop
- ```R
-i <- 1
-while (i < 5) {
-    i <- i + 1
-}
-print(i)
-```
-Should print the following:
- ```R
-> 5
-```
-5. Basic Graphing
- ```R
-y <- c(1, 2, 3, 4)
-plot(y)
-```
-<img width="431" alt="image" src="https://user-images.githubusercontent.com/25289269/148433202-551dd179-862b-459a-95f8-3f79e381416e.png">
-
 ## Cheat Sheets
 ### Conda
 [conda-cheatsheet.pdf](https://github.com/yosoykit/MED263-private/files/7824027/conda-cheatsheet.pdf)
 
 ### Python
 [python-cheatsheet.pdf](https://github.com/yosoykit/MED263-private/files/7824039/python-cheatsheet.pdf)
-
-### R
-[base-r-cheatsheet.pdf](https://github.com/yosoykit/MED263-private/files/7824040/base-r-cheatsheet.pdf)
 
 ## References & Additional Help
 Installing Conda: (https://docs.anaconda.com/anaconda/install/linux/)  
