@@ -12,7 +12,7 @@ pwd
 
 3. Change to a different directory and check if the current directory has been changed
 ```bash
-cd /home
+cd ~
 pwd
 ```
 
@@ -73,4 +73,3 @@ mv testcopy.vcf variants
 ls -hl
 ls -hl variants
 ```
-
