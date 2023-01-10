@@ -80,7 +80,13 @@ Should print the following
  ```R
 #This is a single line comment
 ```
-3. Basic For Loops  
+
+3. Create a vector ```c()```
+```R
+vec <- c(0, 1, 2, 3, 4, 5, 6)
+```
+
+4. Basic For Loops  
 In python, the tabs / spacing are necessary for the code to run properly, but R is not sensitive to this
  ```R
 sample_list <- c(1, 2, 3, 4)
@@ -96,7 +102,7 @@ Should print the following:
 > 4
 ```
 
-4. Basic While Loop
+5. Basic While Loop
  ```R
 i <- 1
 while (i < 5) {
@@ -108,13 +114,57 @@ Should print the following:
  ```R
 > 5
 ```
-5. Basic Graphing
+
+6. Install a package (do this once)
+
+If available on CRAN, we can install with the ```install.packages()``` function
+
  ```R
-y <- c(1, 2, 3, 4)
-plot(y)
+ install.packages("ggplot2")
 ```
 
-## Changing R versions:
+7. Load an installed package (do every R session in which you use the function)
+```R
+library(ggplot2)
+```
+
+8. Use seq to generate a vector
+```R
+?seq # Will show you the help for the seq() function
+x_vec <- seq(from = 0, to = 1000, by = 10)
+print(x_vec)
+```
+
+9. Write a function
+```R
+sine_squared <- function(x){
+   return(sin(x)*sin(x))
+}
+```
+
+10. Use sapply to apply a function to a vector
+```R
+?sapply # Bring up the documentation for the sapply() function
+y_vec <- sapply(X = x_vec, FUN = sine_squared)
+```
+
+11. Create a data.frame
+```R
+?data.frame # Bring up the documentation for the data.frame() function
+df <- data.frame("x_data" = x_vec, "y_data" = y_vec)
+print(df)
+```
+
+11. Plot the sine square function using ggplot
+```R
+plot1 <- ggplot(data = df) + geom_line(aes(x = x_data, y = y_data), color = "red", linewidth = 2) 
+plot1
+
+# Add the data points using ggplot's geom_point
+plot1 + geom_point(data = df, aes(x = x_data, y = y_data), color = "black", size = 1)
+```
+
+## Bonus: Changing R versions
 I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(   The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor. Note: install the new R before doing this, then do this in the new R. The new R version will automatically become the default in Rstudio.
 
 ```R
