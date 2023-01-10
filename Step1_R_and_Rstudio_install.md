@@ -169,9 +169,9 @@ for (i in c(1:length(x_vec))){
 }
 
 # Check that they're the same
-y_vec == y_vec1
+y_vec == y_vec1 # Checks if each element is equal
 ?all
-all(y_vec == y_vec1)
+all(y_vec == y_vec1) # Checks if the vectors (all elements) are equal
 ```
 
 11. Create a data.frame
