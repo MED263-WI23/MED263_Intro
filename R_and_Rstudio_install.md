@@ -57,6 +57,57 @@ Working in a terminal-like application would be pretty annoying, so we want Rstu
 Install Rstudio by downloading from here: (https://posit.co/download/rstudio-desktop/)
 Note that we just did step 1, so we can skip that. Again, make sure you download the right one for your Operating System.
 
+## Intro to R
+
+### Basic Commands
+1. Printing
+```R
+x <- 'Hello World'
+print(x)
+```
+Should print the following
+```R
+'Hello World'
+```
+
+2. Comments
+ ```R
+#This is a single line comment
+```
+3. Basic For Loops  
+In python, the tabs / spacing are necessary for the code to run properly
+ ```R
+sample_list <- c(1, 2, 3, 4)
+for (x in sample_list){
+    print(x)
+}
+```
+Should print the following:
+ ```r
+> 1
+> 2
+> 3
+> 4
+```
+
+4. Basic While Loop
+ ```R
+i <- 1
+while (i < 5) {
+    i <- i + 1
+}
+print(i)
+```
+Should print the following:
+ ```R
+> 5
+```
+5. Basic Graphing
+ ```R
+y <- c(1, 2, 3, 4)
+plot(y)
+```
+
 ## Changing R versions:
 I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(   The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor. Note: install the new R before doing this, then do this in the new R. The new R version will automatically become the default in Rstudio.
 
