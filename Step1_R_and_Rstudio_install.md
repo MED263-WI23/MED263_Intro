@@ -7,7 +7,7 @@
 ## R
 #### What is R?
 R is an open source, free software language popular among data scientists and bioinformaticians. Its focus is on statistics and graphics.
-"Under the hood", R is written in C and Fortran, but R itself is an interpreted language, meaning that there is no need to pre-compile. R will interpret and run the source code in one step.
+"Under the hood", R is written in C and Fortran, but R itself is an interpreted language, meaning that there is no need to pre-compile. R will interpret and run your code in one step.
 
 #### Why use R
 - Lots of great packages. If you're trying to do something, chances are there's a package for that
