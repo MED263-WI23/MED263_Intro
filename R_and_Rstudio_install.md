@@ -3,6 +3,7 @@
 ## Background on R and Rstudio
 
 <img height="80" alt="image" src="https://www.r-project.org/logo/Rlogo.png">
+
 ### R
 #### What is R
 R is an open source, free software language popular among data scientists and bioinformaticians. Its focus is on statistics and graphics.
