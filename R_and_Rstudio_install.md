@@ -2,7 +2,7 @@
 
 ## Background on R and Rstudio
 
-<img width="276" alt="image" src="https://en.wikipedia.org/wiki/R_%28programming_language%29#/media/File:R_logo.svg">
+<img width="276" alt="image" src="https://www.r-project.org/logo/Rlogo.png">
 ### R
 #### What is R
 R is an open source, free software language popular among data scientists and bioinformaticians. Its focus is on statistics and graphics.
