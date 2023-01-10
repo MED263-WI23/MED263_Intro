@@ -16,16 +16,16 @@ cd /home
 pwd
 ```
 
-4. Try downloading an external file
-```bash
-wget https://github.com/jihoonkim/dockerhub-iadmix/raw/master/HG001_chr22.vcf.gz
-```
-
-5. Install missing package **wget** first and try again downloading the file
+4. Check if you have **wget** and install if necessary
 
 [Mac instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Mac)
 
 [Windows instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Windows)
+
+5. Try downloading an external file
+```bash
+wget https://adimitromanolakis.github.io/truffle/fs-and-po-pairs-from-1000genomes.vcf.gz
+```
 
 
 **EXERCISE**: What is the file size of downloaded file HG001_chr22.vcf.gz?
@@ -34,24 +34,24 @@ Find it out from the docker terminal by running ```ls -hl```
 
 6. Unzip the .gz file (depends on Operating System)
 ```bash
-gunzip HG001_chr22.vcf.gz
+gunzip fs-and-po-pairs-from-1000genomes.vcf.gz
 ```
 
 7. Print the last ten lines of the .vcf file
 ```bash
-tail -n 10 HG001_chr22.vcf
+tail -n 10 fs-and-po-pairs-from-1000genomes.vcf
 ```
 
-**EXERCISE**: What is the the number of lines in .vcf file HG001_chr22.vcf?
-Find it out from the docker terminal by running ```wc -l HG001_chr22.vcf```
+**EXERCISE**: What is the the number of lines in .vcf file fs-and-po-pairs-from-1000genomes.vcf?
+Find it out from the docker terminal by running ```wc -l fs-and-po-pairs-from-1000genomes.vcf```
 
 
-**EXERCISE**: What is the the md5 value of the last ten lines of the file HG001_chr22.vcf?
-Find it out from the docker terminal by running ```tail -n 10 HG001_chr22.vcf | md5sum ```
+**EXERCISE**: What is the the md5 value of the last ten lines of the file fs-and-po-pairs-from-1000genomes.vcf?
+Find it out from the docker terminal by running ```tail -n 10 fs-and-po-pairs-from-1000genomes.vcf | md5sum ```
 
 8. Search the line containing the SNP with RSID rs2401506.
 ```bash
-grep rs2401506 HG001_chr22.vcf
+grep rs2401506 fs-and-po-pairs-from-1000genomes.vcf
 ```
 
 
@@ -63,7 +63,7 @@ ls -hl
 
 10. Copy a file
 ```bash
-cp HG001_chr22.vcf testcopy.vcf
+cp fs-and-po-pairs-from-1000genomes.vcf testcopy.vcf
 ls -hl
 ```
 
@@ -73,7 +73,4 @@ mv testcopy.vcf variants
 ls -hl
 ls -hl variants
 ```
-
-
-**EXERCISE**: What are the reference allels and alternative alleles of SNP rs2401506 in this .vcf file? Find it out from the docker terminal by running ```tail -n 10 HG001_chr22.vcf | md5sum ```
 
