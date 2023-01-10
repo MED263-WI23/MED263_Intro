@@ -140,10 +140,8 @@ BiocManager::install(missing_from_cran)
 ```
 
 ## Helpful Links:
-### Installing R + Rstudio: (https://rstudio-education.github.io/hopr/starting.html)
-
-### Updating R (mac): (https://github.com/AndreaCirilloAC/updateR)
-### Updating R (windows): (https://talgalili.github.io/installr/)
-
+### [Installing R + Rstudio](https://rstudio-education.github.io/hopr/starting.html)
+### [Updating R (mac)](https://github.com/AndreaCirilloAC/updateR)
+### [Updating R (windows)](https://talgalili.github.io/installr/)
 ### [base-r-cheatsheet.pdf](https://www.i3s.unice.fr/~malapert/R/pdf/base-r.pdf)
 
