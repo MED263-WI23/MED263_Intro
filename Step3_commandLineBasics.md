@@ -10,13 +10,19 @@ ls
 pwd
 ```
 
-3. Change to a different directory and check if the current directory has been changed
+3. Create your own directory
 ```bash
-cd ~
+mkdir ~/variants
+ls -hl
+```
+
+4. Change to a different directory and check if the current directory has been changed
+```bash
+cd ~/variants
 pwd
 ```
 
-4. Check if you have **wget** and install if necessary
+5. Check if you have **wget** and install if necessary
 
 Mac
 ```bash
@@ -54,17 +60,17 @@ Windows users: Follow Ubuntu instructions above if you have installed Ubuntu.
 If not, instructions are here:
 [Windows instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Windows)
 
-5. Try downloading an external file
+6. Try downloading an external file
 ```bash
 wget https://adimitromanolakis.github.io/truffle/fs-and-po-pairs-from-1000genomes.vcf.gz
 ```
 
-6. Find the file size of fs-and-po-pairs-from-1000genomes.vcf by running 
+7. Find the file size of fs-and-po-pairs-from-1000genomes.vcf by running 
 ```bash
 ls -hl
 ```
 
-7. Unzip the .gz file (depends on Operating System)
+8. Unzip the .gz file (depends on Operating System)
 Mac
 ```bash
 # Check if gzip is installed
@@ -89,20 +95,14 @@ sudo apt install gzip
 gunzip fs-and-po-pairs-from-1000genomes.vcf.gz
 ```
 
-8. Print the last ten lines of the .vcf file
+9. Print the last ten lines of the .vcf file
 ```bash
 tail -n 10 fs-and-po-pairs-from-1000genomes.vcf
 ```
 
-9. Find the number of lines in .vcf file fs-and-po-pairs-from-1000genomes.vcf
+10. Find the number of lines in .vcf file fs-and-po-pairs-from-1000genomes.vcf
 ```bash
 wc -l fs-and-po-pairs-from-1000genomes.vcf
-```
-
-10. Create your own directory
-```bash
-mkdir variants
-ls -hl
 ```
 
 11. Copy a file
@@ -111,9 +111,11 @@ cp fs-and-po-pairs-from-1000genomes.vcf testcopy.vcf
 ls -hl
 ```
 
+
 12. Move a file to another directory
 ```bash
-mv testcopy.vcf variants
+mkdir newDir
+mv testcopy.vcf newDir
 ls -hl
-ls -hl variants
+ls -hl newDir
 ```
