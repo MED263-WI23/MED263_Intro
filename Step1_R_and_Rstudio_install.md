@@ -40,7 +40,9 @@ Because each OS is different, you need to download the binary which is specific 
 #### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
 To test if we've installed R, open a terminal and execute:
-```R```
+```bash
+R
+```
 which should start R within your terminal
 
 To see where packages will be installed, run:
