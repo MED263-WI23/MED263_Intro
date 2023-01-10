@@ -157,13 +157,14 @@ sine_squared <- function(x){
 
 10. Use sapply to apply a function to a vector
 ```R
-?sapply # Bring up the documentation for the sapply() function
+# ?sapply # Bring up the documentation for the sapply() function
 y_vec <- sapply(X = x_vec, FUN = sine_squared)
 
-# Note that this is equivalent to:
-?rep
-# Fill y_vec1 with zeroes first
-y_vec1 <- rep(x = 0, length.out = length(x_vec))
+# Note that this the above code using sapply() is equivalent to:
+# Fill y_vec1 with zeroes first and then write each element of y_vec1 using a for loop
+y_vec1 <- rep(x = 0, length.out = length(x_vec)) # rep will repeat x=0 as many times as we specify (in this case, we want it to be the same length as x_vec)
+?rep # Pull up rep documentation
+# For loop to assign values to y_vec1
 for (i in c(1:length(x_vec))){
    y_vec1[i] <- sine_squared(x_vec[i])
 }
