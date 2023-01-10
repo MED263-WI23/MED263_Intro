@@ -117,7 +117,7 @@ plot(y)
 ## Changing R versions:
 I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(   The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor. Note: install the new R before doing this, then do this in the new R. The new R version will automatically become the default in Rstudio.
 
-```
+```R
 # Get library locations
 print(.libPaths())
 
