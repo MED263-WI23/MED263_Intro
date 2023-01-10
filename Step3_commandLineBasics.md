@@ -50,7 +50,8 @@ wget --version
 ```
 [Linux instructions](https://www.tecmint.com/install-wget-in-linux/)
 
-Windows users: Follow Ubuntu instructions above if you have installed Ubuntu
+Windows users: Follow Ubuntu instructions above if you have installed Ubuntu.
+If not, instructions are here:
 [Windows instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Windows)
 
 5. Try downloading an external file
@@ -64,7 +65,27 @@ ls -hl
 ```
 
 7. Unzip the .gz file (depends on Operating System)
+Mac
 ```bash
+# Check if gzip is installed
+gzip --version
+
+# If not, install it using brew
+brew install gzip
+
+# Unzip the .gz file
+gunzip fs-and-po-pairs-from-1000genomes.vcf.gz
+```
+
+Ubunutu
+```bash
+# Check if gzip is installed
+gzip --version
+
+# If not, install it
+sudo apt install gzip
+
+# Unzip the .gz file
 gunzip fs-and-po-pairs-from-1000genomes.vcf.gz
 ```
 
