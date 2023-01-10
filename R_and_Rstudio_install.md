@@ -50,7 +50,7 @@ Most of the time, this will also tell you where your version of R is installed. 
 Type :
 ```q()``` to exit R and go back to your terminal
 
-Working in a 
+Working in a terminal-like application would be pretty annoying, so we want Rstudio to make it as easy as possible.
 
 ### Install Rstudio
 
