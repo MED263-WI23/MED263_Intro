@@ -181,7 +181,7 @@ df <- data.frame("x_data" = x_vec, "y_data" = y_vec)
 print(df)
 ```
 
-11. Plot the sine square function using ggplot
+12. Plot the sine square function using ggplot
 ```R
 plot1 <- ggplot(data = df) + geom_line(aes(x = x_data, y = y_data), color = "red", linewidth = 2) 
 print(plot1)
