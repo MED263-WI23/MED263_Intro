@@ -28,12 +28,15 @@ Rstudio is an Integrated Development Environment (IDE) designed for writing and 
 - Helps with git and package development
 
 ### Install R
+The newest version of R is: R 4.2.2 "Innocent and Trusting" released on 2022/10/31
+They always have weird names...
 CRAN is your source for (almost) everything R: (https://cran.r-project.org/)
 Here, we want to install a binary. This means that we just want the compiled version that runs on our operating system (OS). Sometimes, we will want to download all the code that is used to write R (or some other language/package) and then compile it ourselves.
 
-The newest version of R is: R 4.2.2 "Innocent and Trusting" released on 2022/10/31
-They always have weird names...
-
 Because each OS is different, you need to download the binary which is specific to your OS:
-#### Macs be careful. M1 and newer macs download one binary. Older intel macs download another.
+- Linux: (https://cran.r-project.org/bin/linux/)
+- Windows: (https://cran.r-project.org/bin/windows/)
+- Mac: (https://cran.r-project.org/bin/macosx/)
+#### Macs be careful. M1 and newer macs download the top binary. Older intel macs download the one below.
+
 
