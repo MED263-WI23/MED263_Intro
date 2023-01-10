@@ -39,18 +39,18 @@ Because each OS is different, you need to download the binary which is specific 
 - Mac: (https://cran.r-project.org/bin/macosx/)
 #### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
-To test if we've installed R, open a terminal and type:
+To test if we've installed R, open a terminal and execute:
 ```R```
 which should start R within your terminal
 
-To see where packages will be installed, type:
+To see where packages will be installed, run:
 ```R
 .libPaths()
 ``` 
 in R. 
 Most of the time, this will also tell you where your version of R is installed. Just change 'library' to 'bin/R'
 
-Type :
+Run :
 ```R
 q()
 ``` 
