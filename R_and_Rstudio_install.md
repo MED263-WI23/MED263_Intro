@@ -44,11 +44,15 @@ To test if we've installed R, open a terminal and type:
 which should start R within your terminal
 
 To see where packages will be installed, type:
-```.libPaths()``` in R. 
+```R
+.libPaths()``` 
+in R. 
 Most of the time, this will also tell you where your version of R is installed. Just change 'library' to 'bin/R'
 
 Type :
-```q()``` to exit R and go back to your terminal
+```R
+q()``` 
+to exit R and go back to your terminal
 
 Working in a terminal-like application would be pretty annoying, so we want Rstudio to make it as easy as possible.
 
