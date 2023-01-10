@@ -75,7 +75,7 @@ Should print the following
 #This is a single line comment
 ```
 3. Basic For Loops  
-In python, the tabs / spacing are necessary for the code to run properly
+In python, the tabs / spacing are necessary for the code to run properly, but R is not sensitive to this
  ```R
 sample_list <- c(1, 2, 3, 4)
 for (x in sample_list){
