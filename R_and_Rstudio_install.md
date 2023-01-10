@@ -40,3 +40,6 @@ Because each OS is different, you need to download the binary which is specific 
 #### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
 
+## Helpful Links:
+### Installing R + Rstudio: (https://rstudio-education.github.io/hopr/starting.html)
+
