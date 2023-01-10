@@ -92,7 +92,7 @@ print(length(vec))
 ```
 Should print the following:
 ```R
-> 7
+7
 ```
 
 4. Basic For Loops  
@@ -106,10 +106,10 @@ for (x in sample_vec){
 ```
 Should print the following:
  ```R
-> 1
-> 3
-> 5
-> 7
+1
+3
+5
+7
 ```
 
 5. Basic While Loop
@@ -122,15 +122,14 @@ print(i)
 ```
 Should print the following:
  ```R
-> 5
+5
 ```
 
 6. Install a package (do this once for each package you need)
 
 If available on CRAN, we can install with the ```install.packages()``` function
-
- ```R
- install.packages("ggplot2")
+```R
+install.packages("ggplot2")
 ```
 
 7. Load an installed package (do every R session in which you use the package)
