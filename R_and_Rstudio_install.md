@@ -37,6 +37,6 @@ Because each OS is different, you need to download the binary which is specific 
 - Linux: (https://cran.r-project.org/bin/linux/)
 - Windows: (https://cran.r-project.org/bin/windows/)
 - Mac: (https://cran.r-project.org/bin/macosx/)
-#### Macs be careful. M1 and newer macs download the top binary. Older intel macs download the one below.
+#### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
 
