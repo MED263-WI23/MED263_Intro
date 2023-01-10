@@ -164,12 +164,14 @@ y_vec <- sapply(X = x_vec, FUN = sine_squared)
 ?rep
 # Fill y_vec1 with zeroes first
 y_vec1 <- rep(x = 0, length.out = length(x_vec))
-for (i in c(1:length(x_vec)){
+for (i in c(1:length(x_vec))){
    y_vec1[i] <- sine_squared(x_vec[i])
 }
 
 # Check that they're the same
 y_vec == y_vec1
+?all
+all(y_vec == y_vec1)
 ```
 
 11. Create a data.frame
