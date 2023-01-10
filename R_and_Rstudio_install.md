@@ -54,18 +54,21 @@ Working in a
 
 ### Install Rstudio
 
+Install Rstudio by downloading from here: (https://posit.co/download/rstudio-desktop/)
+Note that we just did step 1, so we can skip that. Again, make sure you download the right one for your Operating System.
+
 ## Changing R versions:
-I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(
-The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor.
+I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(   The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor. Note: install the new R before doing this, then do this in the new R. The new R version will automatically become the default in Rstudio.
+
 ```
-# Get current library location
+# Get library locations
 print(.libPaths())
 
 
 # Manually set to old version (which has all your packages)
 lib_loc <- "/Library/Frameworks/R.framework/Versions/4.1/Resources/library"
 to_install <- unname(installed.packages(lib.loc = lib_loc)[, "Package"])
-to_install
+print(to_install)
 
 # First, install from CRAN
 install.packages(pkgs = to_install)
@@ -81,4 +84,7 @@ BiocManager::install(missing_from_cran)
 
 ## Helpful Links:
 ### Installing R + Rstudio: (https://rstudio-education.github.io/hopr/starting.html)
+
+### Updating R (mac): (https://github.com/AndreaCirilloAC/updateR)
+### Updating R (windows): (https://talgalili.github.io/installr/)
 
