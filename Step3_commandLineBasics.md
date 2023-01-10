@@ -13,7 +13,6 @@ pwd
 3. Create your own directory
 ```bash
 mkdir ~/variants
-ls -hl
 ```
 
 4. Change to a different directory and check if the current directory has been changed
