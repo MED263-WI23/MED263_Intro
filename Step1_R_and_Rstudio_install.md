@@ -36,9 +36,9 @@ CRAN is your source for (almost) everything R: (https://cran.r-project.org/)
 For mac and windows, we want to install a binary. This means that we just want the compiled version that runs on our operating system (OS). Sometimes, we will want to download all the code that is used to write a language/package and then compile it ourselves. This would be called "installing from source" and is a more common approach for linux users.
 
 Because each OS is different, you need to download the binary which is specific to your OS:
-- Linux: (https://cran.r-project.org/bin/linux/)
 - Windows: (https://cran.r-project.org/bin/windows/)
 - Mac: (https://cran.r-project.org/bin/macosx/)
+- Linux (follow instructions here for your specific OS): (https://cran.r-project.org/bin/linux/)
 #### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
 To test if we've installed R, open a terminal and execute:
@@ -60,7 +60,7 @@ q()
 ``` 
 to exit R and go back to your terminal
 
-Working in a terminal-like application would be pretty annoying, so we want Rstudio to make it as easy as possible.
+Working in a terminal-like application would be pretty annoying, so we want Rstudio to make using R easier.
 
 ### Install Rstudio
 
@@ -82,13 +82,17 @@ Should print the following
 
 2. Comments
  ```R
-#This is a single line comment
+# This is a single line comment
 ```
 
 3. Create a vector using ```c()``` and check its length
 ```R
 vec <- c(0, 1, 2, 3, 4, 5, 6)
 print(length(vec))
+```
+Should print the following:
+```R
+> 7
 ```
 
 4. Basic For Loops  
@@ -121,7 +125,7 @@ Should print the following:
 > 5
 ```
 
-6. Install a package (do this once)
+6. Install a package (do this once for each package you need)
 
 If available on CRAN, we can install with the ```install.packages()``` function
 
@@ -129,7 +133,7 @@ If available on CRAN, we can install with the ```install.packages()``` function
  install.packages("ggplot2")
 ```
 
-7. Load an installed package (do every R session in which you use the function)
+7. Load an installed package (do every R session in which you use the package)
 ```R
 library(ggplot2)
 ```
