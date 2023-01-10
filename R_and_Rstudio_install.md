@@ -145,5 +145,5 @@ BiocManager::install(missing_from_cran)
 ### Updating R (mac): (https://github.com/AndreaCirilloAC/updateR)
 ### Updating R (windows): (https://talgalili.github.io/installr/)
 
-### [base-r-cheatsheet.pdf](https://github.com/yosoykit/MED263-private/files/7824040/base-r-cheatsheet.pdf)
+### [base-r-cheatsheet.pdf](https://www.i3s.unice.fr/~malapert/R/pdf/base-r.pdf)
 
