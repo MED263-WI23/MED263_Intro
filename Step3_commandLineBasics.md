@@ -12,12 +12,12 @@ pwd
 
 3. Create your own directory
 ```bash
-mkdir ~/variants
+mkdir variants
 ```
 
 4. Change to a different directory and check if the current directory has been changed
 ```bash
-cd ~/variants
+cd variants
 pwd
 ```
 
@@ -70,6 +70,7 @@ ls -hl
 ```
 
 8. Unzip the .gz file (depends on Operating System)
+
 Mac
 ```bash
 # Check if gzip is installed
@@ -82,7 +83,7 @@ brew install gzip
 gunzip fs-and-po-pairs-from-1000genomes.vcf.gz
 ```
 
-Ubunutu
+Ubuntu
 ```bash
 # Check if gzip is installed
 gzip --version
