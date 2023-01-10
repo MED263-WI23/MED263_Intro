@@ -1,4 +1,4 @@
-## Basic linux commands
+## Basic commands
 
 1. List the contents of the current directory
 ```bash
