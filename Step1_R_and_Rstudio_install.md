@@ -13,7 +13,7 @@ R is an open source, free software language popular among data scientists and bi
 - Lots of great packages. If you're trying to do something, chances are there's a package for that
 - Simple syntax and helpful error messages make coding relatively easy
 - Rstudio is great
-- Pretty pictures (compared to, for example, python)
+- Pretty pictures (compared to python)
 - Almost all of the speakers in this class are doing something in R
 
 <img height="80" alt="image" src="https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png">
