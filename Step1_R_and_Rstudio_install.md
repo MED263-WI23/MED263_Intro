@@ -81,25 +81,27 @@ Should print the following
 #This is a single line comment
 ```
 
-3. Create a vector ```c()```
+3. Create a vector using ```c()``` and check its length
 ```R
 vec <- c(0, 1, 2, 3, 4, 5, 6)
+print(length(vec))
 ```
 
 4. Basic For Loops  
-In python, the tabs / spacing are necessary for the code to run properly, but R is not sensitive to this
  ```R
-sample_list <- c(1, 2, 3, 4)
-for (x in sample_list){
+sample_vec <- c(1, 3, 5, 7)
+
+# Here, x will take on the value of the element of sample_vec
+for (x in sample_vec){
     print(x)
 }
 ```
 Should print the following:
  ```R
 > 1
-> 2
 > 3
-> 4
+> 5
+> 7
 ```
 
 5. Basic While Loop
@@ -131,11 +133,15 @@ library(ggplot2)
 8. Use seq to generate a vector
 ```R
 ?seq # Will show you the documentation for the seq() function
-x_vec <- seq(from = 0, to = 1000, by = 10)
+x_vec <- seq(from = -10, to = 10, by = .1)
 print(x_vec)
+
+# We can also generate a vector in increments of 1 using c()
+other_vec <- c(1:10)
+print(other_vec)
 ```
 
-9. Write a function
+9. Write a function that takes input x and returns the square of the sine of x
 ```R
 sine_squared <- function(x){
    return(sin(x)*sin(x))
@@ -169,10 +175,10 @@ print(df)
 11. Plot the sine square function using ggplot
 ```R
 plot1 <- ggplot(data = df) + geom_line(aes(x = x_data, y = y_data), color = "red", linewidth = 2) 
-plot1
+print(plot1)
 
-# Add the data points using ggplot's geom_point
-plot1 + geom_point(data = df, aes(x = x_data, y = y_data), color = "black", size = 1)
+# Add the individual data points using ggplot's geom_point
+print(plot1 + geom_point(data = df, aes(x = x_data, y = y_data), color = "black", size = 1))
 ```
 
 ## Bonus: Changing R versions
