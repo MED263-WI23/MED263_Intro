@@ -21,7 +21,7 @@ R is an open source, free software language popular among data scientists and bi
 #### What is Rstudio?
 Rstudio is an Integrated Development Environment (IDE) designed for writing and testing R code. 
 
-#### Why use Rstudio
+#### Why use Rstudio?
 - Plots, variables, etc. can be easily viewed (helps with debugging)
 - Easy to run specific lines or chunks of code (Command+Enter on mac, Ctrl+Enter on windows)
 - Easy to search package and function documentation even when offline
@@ -31,7 +31,7 @@ Rstudio is an Integrated Development Environment (IDE) designed for writing and 
 The newest version of R is: R 4.2.2 "Innocent and Trusting" released on 2022/10/31
 They always have weird names...
 CRAN is your source for (almost) everything R: (https://cran.r-project.org/)
-Here, we want to install a binary. This means that we just want the compiled version that runs on our operating system (OS). Sometimes, we will want to download all the code that is used to write R (or some other language/package) and then compile it ourselves.
+Here, we want to install a binary. This means that we just want the compiled version that runs on our operating system (OS). Sometimes, we will want to download all the code that is used to write a language/package and then compile it ourselves.
 
 Because each OS is different, you need to download the binary which is specific to your OS:
 - Linux: (https://cran.r-project.org/bin/linux/)
@@ -39,6 +39,45 @@ Because each OS is different, you need to download the binary which is specific 
 - Mac: (https://cran.r-project.org/bin/macosx/)
 #### Macs be careful. M1 and newer macs download the top binary (R-4.2.2-arm64.pkg). Older intel macs download the one below (R-4.2.2.pkg).
 
+To test if we've installed R, open a terminal and type:
+```R```
+which should start R within your terminal
+
+To see where packages will be installed, type:
+```.libPaths()``` in R. 
+Most of the time, this will also tell you where your version of R is installed. Just change 'library' to 'bin/R'
+
+Type :
+```q()``` to exit R and go back to your terminal
+
+Working in a 
+
+### Install Rstudio
+
+## Changing R versions:
+I recently wanted to upgrade R. Unfortunately, this meant I would lose the packages I installed and would have to re-install all of them :(
+The following lines help by installing all the my old packages in the new R, so long as they're available from CRAN or Bioconductor.
+```
+# Get current library location
+print(.libPaths())
+
+
+# Manually set to old version (which has all your packages)
+lib_loc <- "/Library/Frameworks/R.framework/Versions/4.1/Resources/library"
+to_install <- unname(installed.packages(lib.loc = lib_loc)[, "Package"])
+to_install
+
+# First, install from CRAN
+install.packages(pkgs = to_install)
+
+# Then, get those that aren't CRAN
+tmp <- installed.packages()
+installedpkgs <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+missing_from_cran <- setdiff(to_install, installedpkgs)
+
+# Install the non-CRAN first using Bioconductor
+BiocManager::install(missing_from_cran)
+```
 
 ## Helpful Links:
 ### Installing R + Rstudio: (https://rstudio-education.github.io/hopr/starting.html)
