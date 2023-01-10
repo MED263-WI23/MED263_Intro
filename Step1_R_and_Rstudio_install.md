@@ -130,7 +130,7 @@ library(ggplot2)
 
 8. Use seq to generate a vector
 ```R
-?seq # Will show you the help for the seq() function
+?seq # Will show you the documentation for the seq() function
 x_vec <- seq(from = 0, to = 1000, by = 10)
 print(x_vec)
 ```
@@ -146,6 +146,17 @@ sine_squared <- function(x){
 ```R
 ?sapply # Bring up the documentation for the sapply() function
 y_vec <- sapply(X = x_vec, FUN = sine_squared)
+
+# Note that this is equivalent to:
+?rep
+# Fill y_vec1 with zeroes first
+y_vec1 <- rep(x = 0, length.out = length(x_vec))
+for (i in c(1:length(x_vec)){
+   y_vec1[i] <- sine_squared(x_vec[i])
+}
+
+# Check that they're the same
+y_vec == y_vec1
 ```
 
 11. Create a data.frame
