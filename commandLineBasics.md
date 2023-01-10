@@ -22,11 +22,15 @@ wget https://github.com/jihoonkim/dockerhub-iadmix/raw/master/HG001_chr22.vcf.gz
 ```
 
 5. Install missing package **wget** first and try again downloading the file
+
 [Mac instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Mac)
+
 [Windows instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Windows)
+
 
 **EXERCISE**: What is the file size of downloaded file HG001_chr22.vcf.gz?
 Find it out from the docker terminal by running ```ls -hl```
+
 
 6. Unzip the .gz file (depends on Operating System)
 ```bash
