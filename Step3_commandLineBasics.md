@@ -40,7 +40,7 @@ brew install wget
 # Confirm that it worked
 wget --version
 ```
-[Mac instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Mac)
+[Additional Mac instructions](https://www.jcchouinard.com/wget/#Download_Wget_on_Mac)
 
 Linux/Ubuntu
 ```bash
@@ -53,7 +53,7 @@ apt-get install wget
 # Confirm that it worked
 wget --version
 ```
-[Linux instructions](https://www.tecmint.com/install-wget-in-linux/)
+[Additional Linux/Ubuntu instructions](https://www.tecmint.com/install-wget-in-linux/)
 
 Windows users: Follow Ubuntu instructions above if you have installed Ubuntu.
 If not, instructions are here:
