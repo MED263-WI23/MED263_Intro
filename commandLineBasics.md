@@ -7,13 +7,11 @@ ls
 
 2. Display the current directory path
 ```bash
-# inside the docker instance
 pwd
 ```
 
 3. Change to a different directory and check if the current directory has been changed
 ```bash
-# inside the docker instance
 cd /home
 pwd
 ```
@@ -49,7 +47,6 @@ Find it out from the docker terminal by running ```tail -n 10 HG001_chr22.vcf | 
 
 8. Search the line containing the SNP with RSID rs2401506.
 ```bash
-# inside the docker instance
 grep rs2401506 HG001_chr22.vcf
 ```
 
