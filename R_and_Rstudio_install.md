@@ -2,7 +2,7 @@
 
 ## Background on R and Rstudio
 
-<img width="276" alt="image" src="https://www.r-project.org/logo/Rlogo.png">
+<img height="80" alt="image" src="https://www.r-project.org/logo/Rlogo.png">
 ### R
 #### What is R
 R is an open source, free software language popular among data scientists and bioinformaticians. Its focus is on statistics and graphics.
@@ -15,7 +15,7 @@ R is an open source, free software language popular among data scientists and bi
 - Pretty pictures (compared to, for example, python)
 - Almost all of the guest speakers in this class are doing something in R
 
-<img width="276" alt="image" src="https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png">
+<img height="80" alt="image" src="https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png">
 
 #### What is Rstudio
 Rstudio is an Integrated Development Environment (IDE) designed for writing and testing R code. 
