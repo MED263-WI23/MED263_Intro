@@ -86,6 +86,15 @@ python --version
 ```
 - This command should report your current version of python and will likely say *Python 3.11.1*
 
+### Install the package for this week
+```bash
+conda install -c bioconda tabix
+```  
+Check to make sure that worked
+```bash
+tabix
+```
+
 ## Install and Run Jupyter Labs
 Now, that we have conda installed we can simply install jupyter labs. 
 Before starting this step, make sure you are in the *(med263_jupyter)*  conda environment. If you are not, follow the instructions in the **Activate Conda Environment** step above to do so. 
