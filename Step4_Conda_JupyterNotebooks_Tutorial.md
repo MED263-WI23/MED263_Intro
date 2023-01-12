@@ -41,7 +41,7 @@ In order to save time, we will be installing Miniconda (the mini version) instea
 1. Download Miniconda
    - Go to the webpage: (https://docs.conda.io/en/latest/miniconda.html#installing)
    - If you you have a Mac choose **Miniconda3 MacOSX 64-bit bash**
-   - If you have Windows with Ubuntu, choose Miniconda3 Linux 64-bit
+   - If you have Windows with Ubuntu, choose **Miniconda3 Linux 64-bit**
    - Save the miniconda download in your **Downloads** folder
 2. Install Miniconda  
    - Start by opening up a terminal, then copy the commands below
@@ -49,12 +49,14 @@ In order to save time, we will be installing Miniconda (the mini version) instea
 cd Downloads
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
-3. [IF you have Ubuntu ... skip to step 7] Test to ensure Miniconda was installed correctly
+3. Test to ensure Miniconda was installed correctly
+IF you have Ubuntu on Windows, instead of $HOME, use the path you saved your Miniconda above
 ```bash
 source $HOME/miniconda3/bin/activate
 conda --help
 ```
 4. Add Conda to your PATH
+IF you have Ubuntu on Windows, instead of $HOME, use the path you saved your Miniconda above
 ```bash
 printf '\n# add path to conda\nexport PATH="$HOME/miniconda3/bin:$PATH"\n' >> ~/.bashrc
 ```
@@ -102,20 +104,27 @@ jupyter lab
 ### Install R on Jupyter Labs  
 1. Start by opening a terminal, then run the following
 ```bash
-conda activate med263_jupyter
-R
-.libPaths()
+conda create -n med263_R_jupyter -c conda-forge r-base -y
 ```
-   - This should output a **path** name ex. 'user/lib/R', copy this **path** for the next step
-2. After copying the **path**, countine:
+
+2. Activate the enviornment
 ```bash
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), lib='path')
-devtools::install_github('IRkernel/IRkernel')
-IRkernel::installspec()
-quit()
+conda activate med263_R_jupyter
 ```
-   - Make sure you change **path** to your copied path name above
-3. Finally, check you installed everything correctly.
+
+3. Test to see if R was correctly isntalled
+```bash
+R --version
+```
+
+4. Install additional needed packages for R to run in jupyter
+```bash
+conda install -c conda-forge r-devtools
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge r-irkernel
+``` 
+
+5. Finally, check you installed everything correctly.
 If the above steps were done right, you should now have the option of Python or R when starting Jupyter Notebooks.
 ```bash
 jupyter lab
