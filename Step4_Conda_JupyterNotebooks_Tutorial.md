@@ -44,14 +44,14 @@ In order to save time, we will be installing Miniconda (the mini version) instea
    - If you have Windows choose **Miniconda3 Windows 64-bit**
    - If you have Windows with Ubuntu, choose **Miniconda3 Linux 64-bit**
    - Save the miniconda download in your **Downloads** folder
-2. Install Miniconda  (Mac and Linux/Ubuntu)
+2. Mac and Linux/Ubuntu: Install Miniconda 
    - Start by opening up a terminal, then copy the commands below
 ```bash
 cd Downloads
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-2. Install Miniconda (Windows)
+2. Windows: Install Miniconda
    - Click on the downloaded conda ".exe" file and follow the prompts to install it.
    - Skip to **Create Conda Environment**
 
