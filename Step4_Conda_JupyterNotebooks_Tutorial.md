@@ -41,14 +41,20 @@ In order to save time, we will be installing Miniconda (the mini version) instea
 1. Download Miniconda
    - Go to the webpage: (https://docs.conda.io/en/latest/miniconda.html#installing)
    - If you you have a Mac choose **Miniconda3 MacOSX 64-bit bash**
+   - If you have Windows choose **Miniconda3 Windows 64-bit**
    - If you have Windows with Ubuntu, choose **Miniconda3 Linux 64-bit**
    - Save the miniconda download in your **Downloads** folder
-2. Install Miniconda  
+2. Install Miniconda  (Mac and Linux/Ubuntu)
    - Start by opening up a terminal, then copy the commands below
 ```bash
 cd Downloads
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
+
+2. Install Miniconda (Windows)
+   - Click on the downloaded conda ".exe" file and follow the prompts to install it.
+   - Skip to **Create Conda Environment**
+
 3. Test to ensure Miniconda was installed correctly  
 **IF you have Ubuntu on Windows**, instead of $HOME, use the path you saved your Miniconda above
 ```bash
@@ -69,6 +75,10 @@ conda init --help
 7. **Close and re-open** your terminal for the environmental variable changes to take effect
 
 ### Create Conda Environment
+
+Windows users (no Ubuntu): Do the following in an anaconda power shell
+
+Mac, Linux and Windows with Ubuntu users: Do the following in a terminal
 ```bash
 conda create -n 'med263_jupyter'
 ```
@@ -95,6 +105,19 @@ Check to make sure that worked
 tabix
 ```
 
+- **Windows users:** If that doesn't work, or you're getting an error related to *openssl*, try:
+```bash
+# First, navigate to your home directory (you may already be there)
+cd %HOMEPATH%
+
+# Then copy the following two files from one folder to another
+cp anaconda3\Library\bin\libcrypto-1_1-x64.dll anaconda3\DLLs
+cp anaconda3\Library\bin\libssl-1_1-x64.dll anaconda3\DLLs
+
+# Then try installing the tabix package and hopefully it will work
+conda install -c bioconda tabix
+```
+
 ## Install and Run Jupyter Labs
 Now, that we have conda installed we can simply install jupyter labs. 
 Before starting this step, make sure you are in the *(med263_jupyter)*  conda environment. If you are not, follow the instructions in the **Activate Conda Environment** step above to do so. 
@@ -111,9 +134,9 @@ jupyter lab
 - If this step isn't working, make sure you are in the *(med263_jupyter)* conda environment
 
 ### Install R on Jupyter Labs  
-1. Start by opening a terminal, then run the following
+1. Start by opening a terminal, then run the following to create a new conda environment
 ```bash
-conda create -n med263_R_jupyter -c conda-forge r-base -y
+conda create -n med263_R_jupyter
 ```
 
 2. Activate the enviornment
@@ -121,15 +144,18 @@ conda create -n med263_R_jupyter -c conda-forge r-base -y
 conda activate med263_R_jupyter
 ```
 
-3. Test to see if R was correctly isntalled
+3. Install R
+```bash
+conda install -c conda-forge r-base
+```
+
+
+4. Test to see if R was correctly installed
 ```bash
 R --version
 ```
 
-4. Install additional needed packages for R to run in jupyter
-```bash
-conda install -c conda-forge r-devtools
-```
+5. Install additional needed packages for R to run in jupyter
 ```bash
 conda install -c conda-forge jupyterlab
 ```
@@ -137,11 +163,12 @@ conda install -c conda-forge jupyterlab
 conda install -c conda-forge r-irkernel
 ``` 
 
-5. Finally, check you installed everything correctly.
+6. Finally, check you installed everything correctly.
 If the above steps were done right, you should now have the option of Python or R when starting Jupyter Notebooks.
 ```bash
 jupyter lab
 ```
+
 Your dashboard should look like the following:
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/25289269/148433362-b9446f17-7131-40d3-b7d5-2a5976d092d4.png">
 
