@@ -120,7 +120,11 @@ R --version
 4. Install additional needed packages for R to run in jupyter
 ```bash
 conda install -c conda-forge r-devtools
+```
+```bash
 conda install -c conda-forge jupyterlab
+```
+```bash
 conda install -c conda-forge r-irkernel
 ``` 
 
