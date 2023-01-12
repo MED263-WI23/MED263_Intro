@@ -80,7 +80,7 @@ Windows users (no Ubuntu): Do the following in an anaconda power shell
 
 Mac, Linux and Windows with Ubuntu users: Do the following in a terminal
 ```bash
-conda create -n 'med263_jupyter'
+conda create -n med263_jupyter
 ```
 - If this step doesn't work, try running *conda activate* first
 
@@ -89,6 +89,11 @@ conda create -n 'med263_jupyter'
 conda activate med263_jupyter
 ```
 - To check your conda environment is working, you should see *(med263_jupyter)* on the left part of your terminal now
+
+### Install python in the conda environment
+```bash
+conda install python
+```
 
 ### Confirm that Python was Installed
 ```bash
