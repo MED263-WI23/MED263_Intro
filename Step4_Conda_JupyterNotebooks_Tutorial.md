@@ -49,14 +49,14 @@ In order to save time, we will be installing Miniconda (the mini version) instea
 cd Downloads
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
-3. Test to ensure Miniconda was installed correctly
-IF you have Ubuntu on Windows, instead of $HOME, use the path you saved your Miniconda above
+3. Test to ensure Miniconda was installed correctly  
+**IF you have Ubuntu on Windows**, instead of $HOME, use the path you saved your Miniconda above
 ```bash
 source $HOME/miniconda3/bin/activate
 conda --help
 ```
-4. Add Conda to your PATH
-IF you have Ubuntu on Windows, instead of $HOME, use the path you saved your Miniconda above
+4. Add Conda to your PATH  
+**IF you have Ubuntu on Windows**, instead of $HOME, use the path you saved your Miniconda above
 ```bash
 printf '\n# add path to conda\nexport PATH="$HOME/miniconda3/bin:$PATH"\n' >> ~/.bashrc
 ```
