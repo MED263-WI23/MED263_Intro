@@ -64,7 +64,14 @@ conda --help
 4. Add Conda to your PATH  
 **IF you have Ubuntu on Windows**, instead of $HOME, use the path you saved your Miniconda above
 ```bash
+# Run the following to see what your shell is:
+echo "$SHELL"
+
+# If your default shell is bash, run:
 printf '\n# add path to conda\nexport PATH="$HOME/miniconda3/bin:$PATH"\n' >> ~/.bashrc
+
+# If your default shell is zsh, run:
+printf '\n# add path to conda\nexport PATH="$HOME/miniconda3/bin:$PATH"\n' >> ~/.zshrc
 ```
 5. **Close and re-open** your terminal for the environmental variable changes to take effect
 
