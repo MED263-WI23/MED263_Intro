@@ -126,8 +126,8 @@ cd %HOMEPATH%
 cp anaconda3\Library\bin\libcrypto-1_1-x64.dll anaconda3\DLLs
 cp anaconda3\Library\bin\libssl-1_1-x64.dll anaconda3\DLLs
 
-# Then try installing the tabix package and hopefully it will work
-conda install -c bioconda tabix
+# Then try installing the tabix package via htslib
+conda install -c bioconda htslib
 ```
 
 ## Install and Run Jupyter Labs
