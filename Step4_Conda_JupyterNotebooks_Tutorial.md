@@ -108,9 +108,9 @@ python --version
 ```
 - This command should report your current version of python and will likely say *Python 3.11.1*
 
-### Install the package for this week
+### Install the package for this week (htslib comes with tabix)
 ```bash
-conda install -c bioconda tabix
+conda install -c bioconda htslib
 ```  
 Check to make sure that worked
 ```bash
