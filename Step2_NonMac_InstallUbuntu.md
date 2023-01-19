@@ -6,7 +6,9 @@
 
 ### Windows 11
 Install Windows subsystem for linux (WSL) from the Windows app store.
-Search "Turn windows features on or off" and check "Virtual Machine platform" and "Windows subsystem for linux" to make sure they are both enabled. Then continue with the instructions here:
+- Search "Turn windows features on or off"
+- Check "Virtual Machine platform" and "Windows subsystem for linux" to make sure they are both enabled
+- Then continue with the instructions here:
 https://www.techradar.com/how-to/how-to-install-ubuntu-in-windows-11
 
  
