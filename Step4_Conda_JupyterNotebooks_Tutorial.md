@@ -118,7 +118,9 @@ tabix
 ```
 
 Install scipy as well
-```conda install -c anaconda scipy```
+```
+conda install -c anaconda scipy
+```
 
 - **Windows users:** If that doesn't work, or you're getting an error related to *openssl*, try:
 ```bash
@@ -133,7 +135,9 @@ cp anaconda3\Library\bin\libssl-1_1-x64.dll anaconda3\DLLs
 conda install -c bioconda htslib
 ```
 Install scipy as well
-```conda install -c anaconda scipy``
+```
+conda install -c anaconda scipy
+```
 
 ## Install and Run Jupyter Labs
 Now, that we have conda installed we can simply install jupyter labs. 
